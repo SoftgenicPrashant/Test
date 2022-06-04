@@ -1,0 +1,64 @@
+.admin-header {
+  position: fixed;
+  width: calc(100vw - 295px);
+  left: 295px;
+  top: 0;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  padding-left: 64px;
+  padding-right: 59px;
+ 
+}
+
+.admin-header .left-side {
+  width: 60%;
+}
+
+.admin-header .left-side .admin-dash-header-searchbar {
+  height: 53px;
+  min-width: 353px;
+}
+
+.admin-header .left-side .admin-dash-header-searchbar input {
+  width: 330px;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.admin-header .user-info-container {
+  height: 76px;
+  width: 304px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 20px 70px rgba(86, 89, 146, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media(max-width: 768px){
+  .admin-header{
+    display: block;
+    flex-direction: column;
+    left: 0;
+    padding-left: 5rem;
+    
+  }
+  .admin-header .left-side {
+    width: 100%;
+  }
+  .admin-header .left-side .admin-dash-header-searchbar input {
+    width: 300px;
+    
+  }
+  .admin-header .user-info-container  {
+    width: 300px;
+    margin-top: 0.4rem;
+  }
+}
